@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@600&display=swap');
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background: #000 url(fab-smart-background.png);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.page {
+    background-color: #1C1C1C;
+    background: rgb(28, 28, 28);
+    background: linear-gradient(169deg, rgba(28, 28, 28, 1) 0%, rgba(12, 12, 12, 1) 100%);
+    margin: 3.5%;
+    border-radius: 70px;
+    scrollbar-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    margin-left: 5%;
+    width: 28%;
+    height: 28%;
+}
+
+.header1 {
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+}
+
+.hword {
+    font-family: 'Golos Text', sans-serif;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Golos Text', sans-serif;
+    color: #DED6CA;
+    padding-bottom: 4%;
+    padding-top: 2%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+main {
+    font-family: 'Golos Text', sans-serif;
+    background: #000 url(fab-background1.png);
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-position-x: center;
+    background-position-y: center;
+    margin: 2.5%;
+    border-radius: 40px;
+    min-height: 200px;
+    max-height: 1750px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+li a:hover:not(.active) {
+    background-color: #292929;
+}
+
+.active {
+    background: rgb(189, 130, 54) !important;
+}
+
+.active hover {
+    background: #e99f3e
+}
+
+nav {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.navi {
+    text-decoration: none;
+    text-decoration-style: none;
+    font-family: 'Golos Text', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+}
+
+.navi a {
+    display: block;
+    padding: 12px;
+    background-color: rgba(58, 58, 58, 0);
+    text-decoration: none;
+    color: #DED6CA;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.navi li {
+    display: table-cell;
+    position: relative;
+    width: 33%;
+}
+
+.navi a:hover {
+    background-color: rgba(68, 68, 68, 0.7);
+    transition: all 0.3s ease 0s;
+}
+
+.main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    vertical-align: middle;
+    display: list-item;
+    max-height: none;
+}
+
+.inline div {
+    display: inline-block;
+    display: -moz-inline-stack;
+    vertical-align: top;
+    font-size: 16px;
+    zoom: 1;
+    *display: inline;
+}
+
+div.inline {
+    font-size: 0;
+}
+
+.userblock {
+    background: rgb(212, 184, 82);
+    background: linear-gradient(191deg, rgb(214, 181, 60) 10%, rgb(216, 116, 77) 90%);
+    width: 35%;
+    height: 300px;
+    border-radius: 40px;
+    text-align: center;
+    flex: 20%;
+    flex-shrink: 1;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.chatblock {
+    width: 65%;
+    height: 300px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: list-item;
+    justify-content: center;
+    list-style-type: none;
+    overflow-y: scroll;
+}
+
+.chatblock::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background: none;
+    border-style: none;
+    border-radius: 100px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    opacity: 75%;
+    transform: scale(1.1);
+}
+
+.userblock input:hover {
+    opacity: 80%;
+}
+
+input {
+    color: #01101a;
+    transition: all 0.3s ease 0s;
+}
+
+input:hover {
+    transform: scale(1.03);
+}
+
+#query {
+    font-family: 'Golos Text', sans-serif;
+    border-style: none;
+    border-radius: 27px;
+    padding: 20px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 15vw;
+}
+
+::placeholder {
+    color: rgba(218, 155, 73, 0.8);
+    font-family: 'Golos Text', sans-serif;
+}
+
+#holder {
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 27px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 10%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 20vw;
+}
+
+.usermiddle {
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    /*background-color: #fff;*/
+    vertical-align: middle;
+    height: 8vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 100%px;
+}
+
+.usermiddle button:hover {
+    opacity: 70%;
+}
+
+.usermiddle button img {
+    opacity: 80%;
+}
+
+#userinputfab3 {
+    opacity: 80%;
+}
+
+#userinputfab2 {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#micro {
+    padding: 0px !important;
+}
+
+.userbottom ul {
+    text-decoration: none;
+    text-decoration-style: none;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.userbottom ul li {
+    text-decoration: none;
+    float: left;
+}
+
+.outputarea {
+    background: rgb(228, 157, 64);
+    padding: 15px;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 1);
+    max-width: fit-content;
+}
+
+.useroutputarea {
+    background: rgb(212, 184, 82);
+    background: linear-gradient(191deg, rgb(214, 181, 60) 10%, rgb(216, 116, 77) 90%);
+    padding: 15px;
+    border-radius: 30px;
+    border-bottom-right-radius: 10px !important;
+    color: rgba(255, 255, 255, 1);
+    width: fit-content;
+    margin-bottom: 15px;
+}
+
+#outputul {
+    text-decoration: none;
+    text-decoration-style: none;
+    font-family: 'Golos Text', sans-serif;
+    list-style-type: none;
+    justify-content: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+#outputul li {
+    float: inline-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputul {
+    opacity: 75% !important;
+    padding-left: 7px;
+}
+
+.loginform {
+    background: rgb(212, 184, 82);
+    background: linear-gradient(191deg, rgb(214, 181, 60) 10%, rgb(216, 116, 77) 90%);
+    width: 35vw;
+    height: max-content;
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 20px;
+    flex: auto;
+}
+
+.loginform img {
+    margin-bottom: 15px;
+}
+
+.loginform a {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.loginform a:hover {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.regtitle {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 27px;
+    color: #fff;
+    width: 20vw;
+    margin: auto;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.inputarea {
+    border-style: none;
+    border-radius: 27px;
+    padding: 12px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 15vw;
+    margin: 1%;
+}
+
+.centerblock {
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px;
+    font-family: 'Golos Text', sans-serif;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.centerblock form {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.centerblock button {
+    margin-top: 10px;
+}
+
+#accquery1 {
+    font-family: 'Golos Text', sans-serif;
+}
+
+#accquery1:hover {
+    opacity: 80%;
+}
+
+#accquery2:hover {
+    opacity: 80%;
+}
+
+#accquery3:hover {
+    opacity: 80%;
+}
+
+.centerblockuseracc {
+    background: rgb(212, 184, 82);
+    background: linear-gradient(191deg, rgb(214, 181, 60) 10%, rgb(216, 116, 77) 90%);
+    width: 35vw;
+    height: max-content;
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 20px;
+    flex: auto;
+}
+
+.block {
+    background: rgb(212, 184, 82);
+    background: linear-gradient(191deg, rgb(214, 181, 60) 10%, rgb(216, 116, 77) 90%);
+    width: 35vw;
+    height: max-content;
+    border-radius: 40px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.block img {
+    padding-bottom: 15px;
+    opacity: 80%;
+}
+
+.block a {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+}
+
+.block a:hover {
+    opacity: 80%;
+}
+
+#count {
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 27px;
+}
+
+@media screen and (max-width: 650px) {
+    .logo {
+        margin-left: 18%;
+        width: 65%;
+        height: 65%;
+    }
+
+    nav {
+        width: 90%;
+    }
+
+    main {
+        font-family: 'Golos Text', sans-serif;
+        background: #000 url(fab-background1.png);
+        background-attachment: scroll;
+        background-repeat: repeat;
+        background-position-x: center;
+        background-position-y: center;
+        margin: 2.5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 30px;
+        min-height: max-content;
+        max-height: 80vh;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .page {
+        border-radius: 45px;
+        margin: 1%;
+    }
+
+    .userblock {
+        background: rgb(212, 184, 82);
+        background: linear-gradient(191deg, rgb(214, 181, 60) 10%, rgb(216, 116, 77) 90%);
+        width: 100%;
+        height: 25%;
+        border-radius: 30px;
+        text-align: center;
+        flex: 20%;
+        flex-shrink: 1;
+        justify-content: center;
+        text-decoration: none;
+        text-decoration-style: none;
+        list-style-type: none;
+        height: 45%;
+        display: list-item;
+    }
+
+    .inline div {
+        display: list-item;
+        vertical-align: top;
+        font-size: 16px;
+        position: relative;
+    }
+
+    div.inline {
+        height: auto;
+    }
+
+    .chatblock {
+        width: 100%;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        height: 40vh;
+        overflow: scroll;
+    }
+
+    #holder {
+        font-size: 20px;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 27px;
+        padding: 10px;
+        color: rgba(255, 255, 255, 0.8);
+        margin-left: 20px;
+        margin-right: 20px;
+        user-select: none;
+        width: 80%;
+        height: auto;
+        margin-top: 10%;
+    }
+
+    .usermiddle {
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        vertical-align: middle;
+        height: 10%;
+        border-radius: 100%px;
+        padding: 0px !important;
+    }
+
+    .usertop {
+        padding-top: 1%;
+    }
+
+    #query {
+        font-family: 'Golos Text', sans-serif;
+        border-style: none;
+        border-radius: 27px;
+        padding: 20px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 70%;
+    }
+
+    #userinputfab1 {
+        width: 60%;
+    }
+
+    #inputul {
+        opacity: 75% !important;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    #inputul button {
+        padding: 0px !important;
+    }
+
+    .outputarea {
+        background: rgb(228, 157, 64);
+        padding: 15px;
+        border-radius: 30px;
+        color: rgba(255, 255, 255, 1);
+        width: fit-content;
+        max-width: fit-content;
+        margin: 0;
+    }
+
+    .useroutputarea {
+        background: rgb(212, 184, 82);
+        background: linear-gradient(191deg, rgb(214, 181, 60) 10%, rgb(216, 116, 77) 90%);
+        padding: 15px;
+        border-radius: 30px;
+        border-top-left-radius: 10px !important;
+        border-bottom-right-radius: 30px !important;
+        color: rgba(255, 255, 255, 1);
+        width: fit-content;
+        max-width: fit-content;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    #outputul {
+        padding: 0;
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        margin-left: 26%;
+    }
+
+    #outputul li {
+        float: inline-end;
+    }
+
+    #userinputfab3 {
+        padding-left: 5px;
+    }
+
+    .loginform {
+        width: 75vw;
+        border-radius: 30px;
+        margin-top: 7vh;
+        margin-bottom: 7vh;
+    }
+
+    .centerblock {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .regtitle {
+        width: 60%;
+    }
+
+    .inputarea {
+        width: 70%;
+        margin: 1%;
+    }
+
+    .block {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 7vh;
+        margin-bottom: 7vh;
+        width: 75vw;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+}
+
+/*input[type=checkbox]:checked~.to-be-changed */

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fabSMART</title>
+    <link rel="stylesheet" href="../static/fabsmart.css">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="header1"><img class="logo" src="../static/fabsmartlogo.png" height="120" draggable="false" alt="fabsmart">
+            </div>
+            <nav>
+                <ul class="navi">
+                    <li><a class="active" href="/">Фаб</a></li>
+                    <li><a href="/offers">Предложения</a></li>
+                    <li><a href="/reg">Аккаунт</a></li>
+                </ul>
+            </nav>
+            <br>
+        </header>
+        <main>
+            <div class="mainbox inline">
+                <div class="chatblock">
+                    <ul id="outputul">
+                        <li class="useroutputarea">{{ text1 }}</li>
+                        <li class="outputarea">{{ text }}</li>
+                        <!--<li class="useroutputarea1">{{ text3 }}</li>
+                        <li class="outputarea1">{{ text2 }}</li>-->
+                    </ul>
+                </div>
+                <div class="userblock">
+                    <div class="usertop">
+                        <p id="holder">Скажите или напишите что-либо!</p>
+                    </div>
+                    <div class="userbottom">
+                        <form action="/" method="get">
+                            <label for="query"></label>
+                            <ul id="inputul">
+                                <li id="userinputfab1"><input type="text" id="query" name="intext"
+                                        placeholder="Сообщение Фабу"></li>
+                                <li id="userinputfab2"><button type="submit"><img src="../static/submitbutton.png" width="55"
+                                            draggable="false" alt="submit"></button></li>
+                                <li id="userinputfab3">
+                                    <form action="/" method="post">    <button id="start-btn"><img src="../static/saybutton.png" width="58" draggable="false" alt="micro"></button>
+                                        <button id="stop-btn">Stop</button>    <source src="" type="audio/wav">
+                                        <script src="../static/voice.js"></script>
+                                    </form>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            &copy; 2023 fabsmartproject
+            <br>ATLAS TEAM <br>
+            v0.2.6.1
+        </footer>
+    </div>
+</body>
+
+</html>
